@@ -1,8 +1,8 @@
-@import '../../sass/main.scss';
 
 .banner{
+    font-family: 'Monstserrat', sans-serif;
     position: relative;
-    @include flex;
+    display: flex;
     border-radius: 15px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/banner.png');
     background-position: center;
@@ -11,8 +11,12 @@
     max-width: 100%;
     margin: 50px auto;
     p{
-        color: $color-primary;
+        color: #fff;
         font-size: clamp(20px, 4vw, 48px);
         font-weight: 500;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 }
