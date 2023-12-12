@@ -1,0 +1,57 @@
+.error{
+    max-width: 95%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    color: #FF6060 ;
+    &_infos{
+        display: flex; 
+        text-align: center;
+        min-height: calc(100vh - 250px);
+        &_titre{
+            font-weight: 700;
+            font-size: 288px;
+        }
+        &_content{
+            font-weight: 500;
+            font-size: clamp(20px, 4vw, 36px);
+            text-align: center;
+        }
+        &_return{
+            display: block;
+            text-align: center;
+            font-weight: 500;
+            font-size: clamp(12px, 2.5vw, 18px);
+        }
+    }
+    
+
+}
+
+.erreur_infos{
+    font-family: 'Monstserrat', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 43em;
+    margin-bottom: 90px;
+}
+
+.erreur_infos_content{
+    font-family: 'Monstserrat', sans-serif;
+    color: #FF6060;
+    font-size: 30px;
+}
+
+.acceuil{
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 19em;
+}
+
+.acceuil a{
+    font-family: 'Monstserrat', sans-serif;
+    font-size: 18px;
+    color: #FF6060 ;
+    margin-left: auto;
+    margin-right: auto;
+}

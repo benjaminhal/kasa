@@ -1,7 +1,7 @@
 import './footer.scss'
 import Logo from '../../assets/logo_footer.png'
 
-export default function Footer() {
+function Footer() {
 	return (
 		<footer className='footer'>
             <div>
@@ -11,3 +11,5 @@ export default function Footer() {
 		</footer>
 	)
 }
+
+export default Footer

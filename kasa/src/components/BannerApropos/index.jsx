@@ -2,7 +2,7 @@ import './banner.scss'
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
-function Banner() {
+function BannerApropos() {
 
 	const [aboutPage, setAboutPage] = useState(false);
 
@@ -17,9 +17,9 @@ function Banner() {
 
 	return (
 		<section className={aboutPage ? 'banner_about' : 'banner'}>
-			{!aboutPage && <p>Chez vous, partout et ailleurs</p>}
+			
 		</section>
 	)
 }
 
-export default Banner
+export default BannerApropos
