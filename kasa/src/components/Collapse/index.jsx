@@ -23,6 +23,7 @@ function Collapse({title, content}) {
                             <p key={index}>{item}</p>
                         )
                     }) : content
+                    
                     }
                 </div> 
             </div>

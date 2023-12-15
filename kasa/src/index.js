@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Logements from './pages/Logement'
 import Propos from './pages/A_Propos'
 import Error from './pages/Error'
+import "./index.scss"
 
 ReactDOM.render(
   <React.StrictMode>

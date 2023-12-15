@@ -4,7 +4,11 @@ import Home from "../../pages/Home"
 import Propos from "../../pages/A_Propos"
 import Logo from '../../assets/LOGO.png'
 
+
+
+
 function Header() {
+    const localisation = window.location.pathname;
 	return (
 		<header className='header'>
 			<h1>
@@ -12,10 +16,10 @@ function Header() {
 			</h1>
 			<nav className="nav">
                 <ul className="nav_list">
-                    <li className="accueil">
+                    <li className={localisation === '/' ? 'nav_list_active' : 'nav_item'} >
                         <Link to="/">Acceuil</Link>    
                     </li>
-                    <li className="">
+                    <li className={localisation === '/à-propos/' ? 'nav_list_active' : 'nav_item'}>
                         <Link to="/à-propos">A Propos</Link>    
                     </li>
                 </ul>

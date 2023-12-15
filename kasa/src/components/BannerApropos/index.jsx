@@ -1,4 +1,4 @@
-import './banner.scss'
+import './baner.scss'
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
@@ -16,8 +16,7 @@ function BannerApropos() {
 	}, [])
 
 	return (
-		<section className={aboutPage ? 'banner_about' : 'banner'}>
-			
+		<section className={aboutPage ? 'banner_about' : 'baner'}>
 		</section>
 	)
 }

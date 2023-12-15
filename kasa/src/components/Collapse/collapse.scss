@@ -1,32 +1,28 @@
 .collapse{
-    background-color: #F7F7F7;
+    background-color: #FF6060;
     max-width: 1100px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    margin: 0 auto;
-    &_title{
+    font-family: 'Monstserrat', sans-serif;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 24px;
+    margin: 55px auto;
+    padding :10px, 20px, 10px, 15px;
+
+    h3{
+        
+        margin-left: 20px;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
-        text-align: center;
-        background-color:  #FF6060;
-        color:  #fff;
+        text-align: center;  
         border-radius: 10px;
         font-weight: 500;
-        font-size: clamp(13px, 2vw, 18px);
+        margin-top: auto;
+        margin-bottom: auto;
         padding: 10px 15px;
         cursor: pointer;
-        .arrow{
-            transition: all 0.2s ease-in-out;
-        }
-        .arrow_up{
-            transform: rotate(0deg);
-        }
-        .arrow_down{
-            transform: rotate(180deg);
-        }
     }
-    &_content{
+    p{
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -42,9 +38,37 @@
                     opacity 0.5s ease-in-out,
                     height 0.2s ease-in-out;
     }
-    &_content_hidden{
+    &_contenu{
+        background-color: forestgreen;
+        color: #FF6060;
+    }
+    &_contenu_cache{
         visibility: hidden;
         opacity: 0;
         height: 0;
+        
     }
+}
+.collapse_contenue{
+    background-color: rgba(246, 246, 246, 1);
+    color: #FF6060;
+}
+
+
+.fleche{
+    transition: all 0.2s ease-in-out;
+}
+.fleche_haut{
+    transform: rotate(0deg);
+    float: right;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 20px;
+}
+.fleche_bas{
+    transform: rotate(180deg);
+    float: right;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 20px;
 }

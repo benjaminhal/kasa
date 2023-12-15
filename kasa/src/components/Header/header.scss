@@ -5,20 +5,19 @@
     gap: 50px;
     color: #FF6060;
     font-size: clamp(12px, 2.5vw, 24px);
-    list-style-type: none;
-    &_item{
-        &_active{
-            position: relative;
-            color: #FF6060;
-            transition: all 0.2s ease-in-out;
-            text-decoration: underline solid #FF6060; 
-        }
-    }
+    list-style-type: none; 
     a{
         color: #FF6060;
         text-decoration: none;
     }
 }
+
+.nav_list_active{
+    position: relative;
+    color: #FF6060;
+    text-decoration: underline solid #FF6060; 
+}
+
 
 header{
     display: flex;
