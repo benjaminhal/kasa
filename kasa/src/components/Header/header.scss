@@ -6,6 +6,9 @@
     color: #FF6060;
     font-size: clamp(12px, 2.5vw, 24px);
     list-style-type: none; 
+    @media screen and (max-width: 900px){
+        font-size: clamp(19px, 3.5vw, 30px);
+    }
     a{
         color: #FF6060;
         text-decoration: none;
@@ -26,9 +29,16 @@ header{
     height: 68px;
     max-width: 95%;
     margin: 0 auto;
+    @media screen and (max-width: 900px){
+        height: 40px;
+    }
     img{
         height: 68px;
         width: 210px;
+        @media screen and (max-width: 700px){
+            height: 40px;
+            width: 123px;
+        }
         
     }
 }

@@ -1,0 +1,87 @@
+.carousel {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 415px;
+    position: relative;
+    @media screen and (max-width: 650px){
+        height: 200px;  
+        margin: 20px auto;   
+    }
+  
+    &::before {
+      content: "";
+      display: block;
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(255, 255, 255, 0) 10%,
+        rgba(255, 255, 255, 0) 90%,
+        rgba(0, 0, 0, 0.3) 100%
+      );
+      border-radius: 25px;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: 10;
+    }
+    img {
+      border-radius: 25px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    /* fleches de la lighbox */
+    .arrow-left,
+    .arrow-right {
+      border: none;
+      outline: none;
+      position: absolute;
+      top: 40%;
+      z-index: 110;
+      
+    }
+    .arrow-left {
+      left: 1%;
+      background: url("../../assets/flecheGauche.png") transparent;
+      height: 79.19999694824219px;
+      width: 46.68000411987305px;
+      
+    }
+    .arrow-right {
+      right: 2%;
+      background: url("../../assets/flecheDroite.png") transparent;
+      height: 79.19999694824219px;
+      width: 46.68000411987305px;
+    }
+    .indexImage {
+      bottom: 5%;
+      color: white;
+      font-size: 18px;
+      font-weight: 500;
+      left: 48%;
+      line-height: 26px;
+      position: absolute;
+    }
+    
+  }
+
+  .col-sm-12{
+    margin-right: auto;
+    width: 47%;
+}
+
+  .d-flex {
+    display: flex;
+    width: 100%;
+    &row{
+        display: flex;
+        width: 255%;
+    }
+}
+
+.container{
+    padding: 35px;
+}
+
+

@@ -1,0 +1,126 @@
+.details{
+    display: flex;
+    flex-direction: row;
+    margin: 0% 0;
+
+    padding: 0;
+    align-items: center;
+    justify-content: space-between; 
+    color: #FF6060;
+    @media screen and (max-width: 650px){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        justify-content: flex-start;
+        gap: 10px;   
+    }
+  
+    h1{
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 51px;
+        letter-spacing: 0em;
+        text-align: left;
+        @media screen and (max-width: 650px){
+            font-size: 25px;
+        }
+
+    }
+    h3{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+        h3{
+            font-size: 14px;
+        }
+    }
+    .host{
+        align-items: center;
+        padding: 0;
+   
+        .hostName{
+            line-height: 20px;
+            margin-left: auto;
+            p{
+                margin: 0;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 26px;
+                letter-spacing: 0em;
+                text-align: right;
+            }
+          
+        }
+        .image{
+            text-align: right;  
+            padding: 0;
+            margin-left: auto;
+
+            .hostThumbnail{
+                width: 64px;
+                height: 64px;  
+                border-radius: 50%; 
+                text-align: right;
+                
+            }
+           
+        }
+        img{
+                text-align: right;  
+                padding: 0;
+                margin-left: auto;}
+    }
+    
+
+.collapse-advertise {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 0;
+    @media screen and (max-width: 650px){
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px auto;
+    }
+
+}
+
+.d-flex{
+    @media screen and (max-width: 650px){
+            width: 100%;
+            display: flex;
+            
+    }
+    &_info{
+        @media screen and (max-width: 650px){
+            margin-right: auto;
+            width: 0em;
+        }
+
+    }
+    &_m-0{
+        @media screen and (max-width: 650px){
+        margin-left: auto;
+        width: 3em;
+        }
+    }
+} 
+
+.col-sm-12{
+    @media screen and (max-width: 650px){
+        width: 100%;
+    }
+}
+
+.col {
+    &_infohost{
+        &_host{
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+
+}

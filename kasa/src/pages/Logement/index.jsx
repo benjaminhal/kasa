@@ -1,31 +1,31 @@
+import Carousel from "../../components/Carousel";
+import { useParams} from "react-router";
 
-import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom";
-import datas from '../../data/logements.json'
-import Header from '../../components/Header';
-import Carousel from '../../components/Carouselle';
-import Footer from '../../components/Footer';
-import Collapse from '../../components/Collapse';
+import Info from "../../components/Infos";
+import Data from '../../data/logements.json'
+import Error from "../Error";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
 
-
-
- function Logements() {
-	
-	const [image, setImage] = useState([]);
-
-	const idlogement = useParams('id').id;
-	
-	useEffect(() => {
-		const logement = datas.filter(data => data.id === idlogement);
-		setImage(logement[0].pictures);
-	}, [idlogement]);
-	return (
-		<>
-			<Header/>
-			<Carousel image={image}/>
-			<Footer/>
-		</>
-	)
+function Logements() {
+ const { id } = useParams()
+ const info = Data.find((item) => item.id === id)
+if(!info){
+  return(
+    <Error/>
+  )
+}
+ return (
+	<div>
+		<Header/>
+		<div className="container mainhero-pageProduct">
+			<Carousel images={info?.pictures} />
+			<Info info={info} />
+    	</div>
+		<Footer/>
+	</div>
+    
+ )
 }
 
-export default Logements
+export default Logements;

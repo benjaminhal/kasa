@@ -6,6 +6,16 @@
     cursor: pointer;
     overflow: hidden;
     transition : box-shadow 0.2s ease-in-out;
+    @media screen and (max-width: 1230px){
+        width: 47%;   
+        margin: 0px auto;
+    }
+    @media screen and (max-width: 900px){
+        width: 90%;    
+    }
+    @media screen and (max-width: 500px){
+        height: 200px;
+    }
 
     &::after{
         content: '';

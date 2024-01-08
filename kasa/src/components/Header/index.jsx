@@ -17,9 +17,9 @@ function Header() {
 			<nav className="nav">
                 <ul className="nav_list">
                     <li className={localisation === '/' ? 'nav_list_active' : 'nav_item'} >
-                        <Link to="/">Acceuil</Link>    
+                        <Link to="/">Accueil</Link>    
                     </li>
-                    <li className={localisation === '/à-propos/' ? 'nav_list_active' : 'nav_item'}>
+                    <li className={localisation === '/%C3%A0-propos' ? 'nav_list_active' : 'nav_item'}>
                         <Link to="/à-propos">A Propos</Link>    
                     </li>
                 </ul>

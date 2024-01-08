@@ -5,9 +5,13 @@
     border-radius: 5px;
     color: #fff;
     font-size: 24px;
-    margin: 55px auto;
-    padding :10px, 20px, 10px, 15px;
-
+    margin: 20px auto;
+    @media screen and (max-width: 650px){
+        
+        width: 90%;
+        
+    }
+    
     h3{
         
         margin-left: 20px;
@@ -21,6 +25,11 @@
         margin-bottom: auto;
         padding: 10px 15px;
         cursor: pointer;
+        @media screen and (max-width: 650px){
+            font-size: 15px;
+            width: 90%;
+        }
+
     }
     p{
         display: flex;
@@ -52,6 +61,7 @@
 .collapse_contenue{
     background-color: rgba(246, 246, 246, 1);
     color: #FF6060;
+     
 }
 
 

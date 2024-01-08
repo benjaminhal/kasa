@@ -9,6 +9,10 @@
     height: 223px;
     max-width: 100%;
     margin: 50px auto;
+    @media screen and (max-width: 650px){
+        height: 111px;
+        width: 90%;
+    }
     p{
         color: #fff;
         font-size: clamp(20px, 4vw, 48px);

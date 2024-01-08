@@ -7,4 +7,12 @@
     border-radius: 25px;
     width: 93%;
     margin: 0 auto;
+    @media screen and (max-width: 1230px){
+        gap: 25px; 
+        padding:25px 0px;
+        background: none;
+    }
+    @media screen and (max-width: 550px){  
+        width: 100%;
+    }
 }

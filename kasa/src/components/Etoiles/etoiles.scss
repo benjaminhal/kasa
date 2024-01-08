@@ -1,0 +1,21 @@
+.stars
+{
+    font-size: 30px;
+    margin-top: 10%;
+    @media screen and (max-width: 650px){
+        width: 145px;
+        height: 20px;  
+    }
+}
+.star-red
+{
+    background-image: url("../../assets/star.png");
+    height: 36px;
+    width: 36px;
+}
+.star-grey
+{
+    background-image: url("../../assets/_star.png");
+    height: 40px;
+    width: 36px;
+}

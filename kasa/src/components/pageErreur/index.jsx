@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./pageErreur.scss"
 
 export default function ErrorPage() {
 	return (
