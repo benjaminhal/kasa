@@ -100,13 +100,15 @@
         }
 
     }
-    &_m-0{
-        @media screen and (max-width: 650px){
-        margin-left: auto;
-        width: 3em;
-        }
-    }
+    
 } 
+
+.m-0{
+    @media screen and (max-width: 650px){
+    margin-left: auto;
+    width: 3em;
+    }
+}
 
 .col-sm-12{
     @media screen and (max-width: 650px){
@@ -122,5 +124,14 @@
             flex-direction: row-reverse;
         }
     }
-
 }
+
+.info{
+    @media screen and (max-width: 650px){
+        margin-right: auto;
+        width: 21em;
+        padding: 25px;}
+}
+
+
+

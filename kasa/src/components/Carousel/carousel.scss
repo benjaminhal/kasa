@@ -82,6 +82,10 @@
 
 .container{
     padding: 35px;
+    @media screen and (max-width: 650px){
+        padding: 0px;
+    }
+
 }
 
 
