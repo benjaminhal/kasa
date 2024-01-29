@@ -19,7 +19,7 @@ if(!info){
 	<div>
 		<Header/>
 		<div className="container mainhero-pageProduct">
-			<Carousel images={info?.pictures} />
+			<Carousel images={info.pictures} />
 			<Info info={info} />
     	</div>
 		<Footer/>

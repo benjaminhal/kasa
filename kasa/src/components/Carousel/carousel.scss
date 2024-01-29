@@ -2,11 +2,12 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 15px;
     height: 415px;
     position: relative;
     @media screen and (max-width: 650px){
         height: 200px;  
-        margin: 20px auto;   
+        margin-top: 45px;   
     }
   
     &::before {
@@ -46,6 +47,11 @@
       background: url("../../assets/flecheGauche.png") transparent;
       height: 79.19999694824219px;
       width: 46.68000411987305px;
+      @media screen and (max-width: 650px){  
+        background: url("../../assets/VectorflecheGauchemobile.png") transparent;
+        height: 21.199997px;
+        width: 3%;
+      }
       
     }
     .arrow-right {
@@ -53,6 +59,11 @@
       background: url("../../assets/flecheDroite.png") transparent;
       height: 79.19999694824219px;
       width: 46.68000411987305px;
+      @media screen and (max-width: 650px){  
+        background: url("../../assets/VectorflecheDroitemobile.png") transparent;
+        height: 21.199997px;
+        width: 3%;
+      }
     }
     .indexImage {
       bottom: 5%;

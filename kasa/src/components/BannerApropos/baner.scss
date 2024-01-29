@@ -1,4 +1,4 @@
-.baner{
+.banner_apropos{
     font-family: 'Monstserrat', sans-serif;
     position: relative;
     display: flex;
@@ -8,7 +8,7 @@
     background-size: cover;
     height: 223px;
     max-width: 100%;
-    margin: 50px auto;
+    margin: 50px 15px;
     @media screen and (max-width: 650px){
         height: 111px;
         width: 90%;

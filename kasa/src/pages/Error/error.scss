@@ -31,14 +31,41 @@
     font-family: 'Monstserrat', sans-serif;
     margin-left: auto;
     margin-right: auto;
-    width: 43em;
+    width: 42em;
     margin-bottom: 90px;
+    margin-top: 20px;
+
+    @media screen and (max-width: 650px){
+        margin-left: auto;
+        margin-right: 0px;
+        width: 17em;
+        margin-bottom: 0px;
+        margin-top: 95px;
+    }
+
+}
+
+.erreur_infos img{
+    @media screen and (max-width: 650px){
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .erreur_infos_content{
     font-family: 'Monstserrat', sans-serif;
     color: #FF6060;
     font-size: 30px;
+
+    @media screen and (max-width: 650px){
+        position: relative;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        width: 12em;
+        font-size: 20px;
+        right: 27px;
+    }
 }
 
 .acceuil{
@@ -46,6 +73,9 @@
     margin-left: auto;
     margin-right: auto;
     width: 19em;
+    @media screen and (max-width: 650px){
+        width: 16em;
+    }
 }
 
 .acceuil a{

@@ -30,7 +30,7 @@ function Info({ info }) {
               />
             </div>
           </div>
-          <Stars className="etoiles" rating={info?.rating} />
+          <Stars className="etoiles" rating={info.rating} />
         </div>
       </div>
       <div className="collapse-advertise">

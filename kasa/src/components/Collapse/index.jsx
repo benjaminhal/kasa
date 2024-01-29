@@ -7,7 +7,7 @@ function Collapse({title, content}) {
     const [toggle, setToggle] = useState(false);
 
     return (
-        <>
+        
             <div className="collapse" >
                 <h3 className='collapse_titre' onClick={() => setToggle(!toggle)} >
                     {title}
@@ -27,7 +27,7 @@ function Collapse({title, content}) {
                     }
                 </div> 
             </div>
-        </>
+        
     )
 }
 

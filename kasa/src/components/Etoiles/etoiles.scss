@@ -10,12 +10,24 @@
 .star-red
 {
     background-image: url("../../assets/star.png");
-    height: 36px;
-    width: 36px;
+    height: 30px;
+    width: 30px;
 }
 .star-grey
 {
     background-image: url("../../assets/_star.png");
-    height: 40px;
-    width: 36px;
+    height: 30px;
+    width: 30px;
+}
+
+.justify-content-end{
+    @media screen and (max-width: 650px){
+        margin-right: auto;
+        width: 5em;
+        /* margin-top: auto; */
+        /* height: 24px; */
+        top: -2em;
+        left: -100px;
+        position: relative;
+    }
 }

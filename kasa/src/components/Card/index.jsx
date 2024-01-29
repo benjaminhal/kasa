@@ -1,7 +1,7 @@
 import './card.scss'
 import { Link } from 'react-router-dom'
 
-export default function Card({id, title, cover}) {
+ function Card({id, title, cover}) {
 
 	return (
 		<Link to={`/accomodation/${id}`} className="gallery_card">
@@ -10,3 +10,5 @@ export default function Card({id, title, cover}) {
 		</Link>
 	)
 }
+
+export default Card
