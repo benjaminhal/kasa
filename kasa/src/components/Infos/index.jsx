@@ -13,7 +13,7 @@ function Info({ info }) {
         <div className="col info">
           <h1>{info.title}</h1>
           <h3>{info.location}</h3>
-          <Tags tags={info?.tags} />
+          <Tags tags={info.tags} />
         </div>
         <div className="col infohost  host ">
           <div className="d-flex m-0">

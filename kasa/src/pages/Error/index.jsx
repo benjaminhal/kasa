@@ -9,7 +9,7 @@ import Erreur from "../../assets/404.png"
 		<div className='erreur'>
 			<Header />
 			<div className="erreur_infos">
-        <img src={Erreur} alt="erreur" className='erreur_infos_titre' />
+        		<img src={Erreur} alt="erreur" className='erreur_infos_titre' />
 				<p className='erreur_infos_content'>Oups ! La page que vous recherchez n'existe pas.</p>
 			</div>
         <div className="acceuil">
