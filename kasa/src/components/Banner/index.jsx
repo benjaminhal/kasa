@@ -3,9 +3,22 @@ import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 function Banner() {
-return (
-		<section className={'banner'}>
-			<p>Chez vous, partout et ailleurs</p>
+
+	const [aboutPage, setAboutPage] = useState(false);
+
+	const localisation = useLocation();
+	
+	
+	useEffect(() => {
+		if(localisation.pathname === '/a-propos'){
+			setAboutPage(true)
+		};
+		// eslint-disable-next-line
+	}, [])
+
+	return (
+		<section className={aboutPage ? 'banner_apropos' : 'banner'}>
+			{!aboutPage && <p>Chez vous, partout et ailleurs</p>}
 		</section>
 	)
 }

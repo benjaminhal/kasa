@@ -12,7 +12,7 @@ function Collapse({title, content}) {
                 <h3 className='collapse_titre' onClick={() => setToggle(!toggle)} >
                     {title}
                     <img 
-                        className={toggle ? 'fleche fleche_up' : 'fleche fleche_bas'} 
+                        className={toggle ? 'fleche fleche_haut' : 'fleche fleche_bas'} 
                         src={fleche} 
                         alt="show content" 
                     />

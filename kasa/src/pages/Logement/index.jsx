@@ -17,12 +17,10 @@ if(!info){
 }
  return (
 	<div>
-		<Header/>
 		<div className="container mainhero-pageProduct">
 			<Carousel images={info.pictures} />
 			<Info info={info} />
     	</div>
-		<Footer/>
 	</div>
     
  )

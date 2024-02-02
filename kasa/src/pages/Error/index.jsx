@@ -7,7 +7,7 @@ import Erreur from "../../assets/404.png"
  function Error() {
 	return (
 		<div className='erreur'>
-			<Header />
+
 			<div className="erreur_infos">
         		<img src={Erreur} alt="erreur" className='erreur_infos_titre' />
 				<p className='erreur_infos_content'>Oups ! La page que vous recherchez n'existe pas.</p>
@@ -15,7 +15,7 @@ import Erreur from "../../assets/404.png"
         <div className="acceuil">
           <Link className='notFound_infos_return' to='/'>Retourner sur la page d'accueil</Link>
         </div>
-				<Footer></Footer>
+				
 		</div>
     
 	)

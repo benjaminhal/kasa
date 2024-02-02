@@ -1,5 +1,5 @@
 
-.banner{
+.banner,.banner_apropos{
     font-family: 'Monstserrat', sans-serif;
     position: relative;
     display: flex;
@@ -14,6 +14,10 @@
         margin: 20px auto;
         height: 120px;
         max-width: 90%;
+        margin-top: 50px;
+    }
+    &_apropos{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/banner2.png');
     }
     p{
         color: #fff;
@@ -23,5 +27,14 @@
         margin-right: auto;
         margin-top: auto;
         margin-bottom: auto;
+    }
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/banner.png');
+    
+
+    &_apropos {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/banner2.png');
     }
 }

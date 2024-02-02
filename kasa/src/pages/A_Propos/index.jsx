@@ -1,7 +1,5 @@
-import Header from '../../components/Header';
-import BannerApropos from '../../components/BannerApropos';
+import Banner from '../../components/Banner';
 import Collapse from '../../components/Collapse';
-import Footer from '../../components/Footer';
 import './aPropos.scss'
 
 const infos = [
@@ -31,8 +29,7 @@ function A_Propos() {
 
 	return (
 		<div>
-			<Header />
-			<BannerApropos />
+			<Banner/>
 			<main className='aPropos'>
 				{infos.map(data => {
 					return (
@@ -42,7 +39,6 @@ function A_Propos() {
 					)}
 				)}
 			</main>
-			<Footer />
 		</div>
 	)
 }

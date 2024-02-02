@@ -6,17 +6,20 @@ import Logements from './pages/Logement'
 import Propos from './pages/A_Propos'
 import Error from './pages/Error'
 import "./index.scss"
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/à-propos" element={<Propos />} />
-        <Route path="/accomodation/:id" element={<Logements/>}/>
-        <Route path="/accomodation/*" element={<Error />}/>
-        <Route path="*" element={<Error />} />
-      </Routes>
+      <Header/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/a-propos" element={<Propos />} />
+          <Route path="/accomodation/:id" element={<Logements/>}/>
+          <Route path="*" element={<Error />} />
+        </Routes>
+      <Footer/>  
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
