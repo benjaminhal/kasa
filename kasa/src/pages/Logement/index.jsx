@@ -4,8 +4,6 @@ import { useParams} from "react-router";
 import Info from "../../components/Infos";
 import Data from '../../data/logements.json'
 import Error from "../Error";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
 
 function Logements() {
  const { id } = useParams()

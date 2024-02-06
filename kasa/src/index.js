@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Logements from './pages/Logement'
@@ -9,7 +9,8 @@ import "./index.scss"
 import Header from './components/Header'
 import Footer from './components/Footer'
 
-ReactDOM.render(
+const root = createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <Router>
       <Header/>
@@ -21,6 +22,5 @@ ReactDOM.render(
         </Routes>
       <Footer/>  
     </Router>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 )
