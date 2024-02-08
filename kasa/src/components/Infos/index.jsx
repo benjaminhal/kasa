@@ -2,7 +2,7 @@ import "./infos.scss";
 import Tags from "../Tags";
 import Stars from "../Etoiles";
 import Collapse from "../Collapse";
-import Data from "../../data/logements.json"
+
 
 function Info({ info }) {
   
