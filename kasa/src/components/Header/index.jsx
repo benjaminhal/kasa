@@ -8,7 +8,6 @@ import Data from "../../data/logements.json"
 
 function Header() {
     let localisation = window.location.pathname;
-    console.log(localisation)
 	const [underline, setUnderline] = useState("accueil");
 	return (
 		<header className='header'>
